@@ -44,7 +44,39 @@ What it will never do on its own: send emails, spend money, or sync to spreadshe
 assistant plugins install inbox-ea
 ```
 
-First use: the assistant scans your recent email, shows you what it found, and asks you to confirm before the first brief goes out.
+First run walks you through setup in 4 steps:
+
+```
+Hey, I'm your Inbox EA. Every morning I scan your email for business
+stuff that needs your attention, new leads, quotes that haven't been
+answered, supplier price changes, deliveries coming in. I sort it all
+by urgency and send you a short brief so you know what to deal with
+today.
+
+Let me get you set up.
+
+Step 1: Do you use Gmail or Outlook for your business email?
+  > Gmail
+
+Step 2: Where should I send your morning brief? Email or Slack?
+  > Email
+
+Step 3: Do you want everything synced to a spreadsheet too?
+        Google Sheets, Excel, or skip?
+  > Google Sheets
+
+Step 4: Want me to scan your inbox now and show you what I find?
+        I'll look at the last 7 days.
+  > Yes
+
+  [scans inbox, logs items, shows sample brief]
+
+  Does this look useful? Want me to run this every morning at 7am?
+  > Yes
+
+  Done. I'll scan your inbox every morning at 7am and send you a brief.
+  You can change the time anytime, just say "send my brief at 8am instead."
+```
 
 ## Surfaces
 
