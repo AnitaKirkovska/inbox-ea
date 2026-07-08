@@ -75,42 +75,25 @@ Mike owns a painting company. Gmail connected. Every morning at 7am, the assista
 ```
 INBOX EA - July 8, 2026
 
-OVERDUE (1):
-  [URGENT] Exterior repaint - 2 story colonial
-    Mike & Sarah Chen (quote, 7d ago, due Jul 5)
-    Sent quote 7 days ago for $12,500. No response.
+OVERDUE
+  [URGENT] Exterior repaint quote - Mike & Sarah Chen
+    7d ago, due Jul 5, $12,500, no response
 
-AGING - needs follow-up (1):
-  [HIGH] Living room job - when can you start?
-    Jennifer Patel (follow-up, 9d ago)
-    Customer replied asking for start date. No response sent yet.
+AGING
+  [HIGH] Living room start date? - Jennifer Patel
+    9d ago, customer waiting on reply
 
-NEW TODAY (2):
-  [HIGH] Kitchen repaint quote request
-    Tom Reyes (lead, today, due Jul 12)
-    Found via website contact form. Wants quote by Friday.
+NEW TODAY
+  [HIGH] Kitchen repaint - Tom Reyes (wants quote by Fri)
+  [NORMAL] Deck staining - Robert Kim (saw our truck)
 
-  [NORMAL] Deck staining inquiry - saw our truck
-    Robert Kim (lead, today)
-    Saw our truck in the neighborhood. Left phone number.
+DUE THIS WEEK
+  [NORMAL] SW price increase Jul 15 - stock up now
+  [NORMAL] Color consult Tue 2pm - Linda Morris
+  [LOW] Primer delivery Wed - 20 gal ProMar 200
 
-DUE THIS WEEK (3):
-  [NORMAL] Sherwin-Williams price increase July 15
-    SW Supply Co (supplier, today, due Jul 15)
-    10% increase across all product lines. Stock up before Jul 15.
-
-  [NORMAL] Color consultation Tuesday 2pm
-    Linda Morris (appt, today, due Jul 9)
-    Wants to discuss colors for 3 bedrooms. Confirmed for 2pm.
-
-  [LOW] Primer delivery arriving Wednesday
-    Sherwin-Williams (delivery, today, due Jul 10)
-    20 gallons of ProMar 200 primer. Track #SW4829103.
-
-ON YOUR WATCHLIST (1):
-  [LOW] Google review from Henderson job
-    Dave Henderson (alert, 1d ago)
-    5-star review posted. Good for marketing.
+WATCHLIST
+  [LOW] 5-star review from Henderson - ask for testimonial
 ```
 
 ### Google Sheet View (synced automatically)
