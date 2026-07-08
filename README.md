@@ -2,7 +2,7 @@
 
 # 📬 inbox-ea
 
-**your inbox, triaged every morning. the small business plugin that tells you what needs attention today.**
+**inbox triage for small business. what needs attention today.**
 
 ![version](https://img.shields.io/badge/version-0.1.0-blue) ![license](https://img.shields.io/badge/license-MIT-green) ![made for](https://img.shields.io/badge/made%20for-Vellum-8A2BE2)
 
