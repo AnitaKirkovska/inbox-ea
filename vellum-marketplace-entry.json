@@ -1,0 +1,12 @@
+{
+  "name": "inbox-ea",
+  "source": {
+    "source": "github",
+    "repo": "AnitaKirkovska/inbox-ea",
+    "ref": "PLACEHOLDER_COMMIT_SHA"
+  },
+  "description": "Inbox triage for small business owners. Scans email, logs business items, delivers urgency-ranked daily briefs.",
+  "category": "productivity",
+  "homepage": "https://github.com/AnitaKirkovska/inbox-ea",
+  "license": "MIT"
+}
