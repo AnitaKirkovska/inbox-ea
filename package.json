@@ -1,7 +1,7 @@
 {
   "name": "@anitakirkovska/inbox-ea",
   "version": "0.1.0",
-  "description": "Inbox triage plugin for small business owners. Stores items extracted from email and delivers urgency-ranked briefs.",
+  "description": "Every morning, scan your email for business stuff that needs your attention and send you a short brief. Never miss a lead, a quote that's going cold, or a supplier price change again.",
   "license": "MIT",
   "peerDependencies": {
     "@vellumai/plugin-api": "^0.8.0"
