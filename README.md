@@ -113,32 +113,6 @@ WATCHLIST
 +------------+------------------------------------------+-------------------+--------+--------+--------+----------+
 ```
 
-### A day in the life
-
-```
-7:00 AM  Assistant scans Gmail since last run
-         |  Finds 4 new business emails
-         v
-7:01 AM  Logs items: 2 leads, 1 supplier change, 1 delivery
-         |  Calls get-brief
-         v
-7:02 AM  Brief delivered to Mike's email
-         |  Assistant skips its own sent message
-         v
-9:30 AM  Mike reads brief, says "mark Chen quote as in_progress"
-         |  update-item called, status updated
-         v
-2:00 PM  Mike finishes a job, says "log a job, painted 3 rooms
-         |  at 123 Main St for Henderson, $4,500, done"
-         v
-2:01 PM  log-item called, item stored
-         |  If Google Sheet connected, row synced
-         v
-Next AM  Assistant scans again, only new emails
-         |  Chen quote still in_progress, shows in aging
-         |  Henderson job marked done, off the watchlist
-```
-
 ## License
 
 MIT
