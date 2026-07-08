@@ -82,7 +82,11 @@ When scanning email for business items, skip messages you sent yourself (the bri
 If the owner has Google Sheets or Microsoft Excel connected and wants their items in a spreadsheet:
 
 1. Create a sheet with columns: Type, Subject, Counterparty, Date, Due Date, Status, Priority, Age, Notes.
-2. Call `list-items` to get all current items.
-3. Write each item as a row. Update existing rows when items change.
+2. Freeze the top row and add a note in row 1: "This is your sheet. Customize it however you like. Inbox EA only updates its own columns. Everything else is yours."
+3. Call `list-items` to get all current items.
+4. Write each item as a row. Update existing rows when items change. Match rows by item ID.
+5. Only update your own columns. If the owner added custom columns (job address, color coding, formulas), leave them alone.
 
 The JSON store is always the source of truth. The spreadsheet is a mirror.
+
+The owner can customize the sheet themselves OR just ask you. Tell them at setup: "This is your sheet. You can change it yourself or just tell me what you want. Add columns, make tabs, color code things, share it with anyone. I'll handle it if you ask."
