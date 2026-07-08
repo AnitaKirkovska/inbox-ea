@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="hero.png" width="200" alt="Inbox EA">
+
 # 📬 inbox-ea
 
 **inbox triage for small business. what needs attention today.**
