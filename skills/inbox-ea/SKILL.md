@@ -48,9 +48,13 @@ Do NOT:
 - Explain the JSON store or the plugin architecture.
 - Use jargon like "triage" or "pipeline" or "items." Say "business stuff that needs your attention."
 
-If they say yes to the first scan, search their recent email (last 7 days), log what you find, and show them a sample brief. Ask: "Does this look useful? Want me to run this every morning?"
+If they say yes to the first scan, search their recent email (last 7 days), log what you find, and show them a sample brief. Then ask: "Does this look useful? Want me to run this every morning?"
 
-If they say no, say "No problem. Just say 'scan my inbox' whenever you want me to check for things that need attention."
+If they say yes, set up a daily schedule for the morning scan. Ask what time works: "What time should I run this every morning? Most owners like 7am." Set up the schedule using the schedule skill. The schedule should: scan email since last run, log new items, call get-brief, and deliver the brief through their preferred channel.
+
+Confirm the schedule is set: "Done. I'll scan your inbox every morning at [time] and send you a brief. You can change the time anytime, just say 'send my brief at 8am instead.'"
+
+If they say no to the first scan, say "No problem. Just say 'scan my inbox' whenever you want me to check for things that need attention."
 
 ## What you do
 
