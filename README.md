@@ -66,6 +66,96 @@ First use: the assistant scans your recent email, shows you what it found, and a
 - "what needs my attention today"
 - "ignore that supplier email about price changes"
 
+## Example
+
+Mike owns a painting company. Gmail connected. Every morning at 7am, the assistant scans his inbox, logs new items, and delivers the brief.
+
+### Morning Brief (delivered to email or Slack)
+
+```
+INBOX EA - July 8, 2026
+
+OVERDUE (1):
+  [URGENT] Exterior repaint - 2 story colonial
+    Mike & Sarah Chen (quote, 7d ago, due Jul 5)
+    Sent quote 7 days ago for $12,500. No response.
+
+AGING - needs follow-up (1):
+  [HIGH] Living room job - when can you start?
+    Jennifer Patel (follow-up, 9d ago)
+    Customer replied asking for start date. No response sent yet.
+
+NEW TODAY (2):
+  [HIGH] Kitchen repaint quote request
+    Tom Reyes (lead, today, due Jul 12)
+    Found via website contact form. Wants quote by Friday.
+
+  [NORMAL] Deck staining inquiry - saw our truck
+    Robert Kim (lead, today)
+    Saw our truck in the neighborhood. Left phone number.
+
+DUE THIS WEEK (3):
+  [NORMAL] Sherwin-Williams price increase July 15
+    SW Supply Co (supplier, today, due Jul 15)
+    10% increase across all product lines. Stock up before Jul 15.
+
+  [NORMAL] Color consultation Tuesday 2pm
+    Linda Morris (appt, today, due Jul 9)
+    Wants to discuss colors for 3 bedrooms. Confirmed for 2pm.
+
+  [LOW] Primer delivery arriving Wednesday
+    Sherwin-Williams (delivery, today, due Jul 10)
+    20 gallons of ProMar 200 primer. Track #SW4829103.
+
+ON YOUR WATCHLIST (1):
+  [LOW] Google review from Henderson job
+    Dave Henderson (alert, 1d ago)
+    5-star review posted. Good for marketing.
+```
+
+### Google Sheet View (synced automatically)
+
+```
++------------+------------------------------------------+-------------------+--------+--------+--------+----------+
+| Type       | Subject                                  | Counterparty      | Age    | Due    | Status | Priority |
++------------+------------------------------------------+-------------------+--------+--------+--------+----------+
+| Quote      | Exterior repaint - 2 story colonial      | Mike & Sarah Chen | 7d ago | Jul 5  | new    | urgent   |
+| Follow-up  | Living room job - when can you start?    | Jennifer Patel    | 9d ago | -      | new    | high     |
+| Lead       | Kitchen repaint quote request             | Tom Reyes         | today  | Jul 12 | new    | high     |
+| Lead       | Deck staining inquiry - saw our truck     | Robert Kim        | today  | -      | new    | normal   |
+| Supplier   | SW price increase July 15                 | SW Supply Co      | today  | Jul 15 | new    | normal   |
+| Appt       | Color consultation Tuesday 2pm            | Linda Morris      | today  | Jul 9  | new    | normal   |
+| Delivery   | Primer delivery arriving Wednesday        | Sherwin-Williams  | today  | Jul 10 | new    | low      |
+| Alert      | Google review from Henderson job          | Dave Henderson    | 1d ago | -      | new    | low      |
++------------+------------------------------------------+-------------------+--------+--------+--------+----------+
+```
+
+### A day in the life
+
+```
+7:00 AM  Assistant scans Gmail since last run
+         |  Finds 4 new business emails
+         v
+7:01 AM  Logs items: 2 leads, 1 supplier change, 1 delivery
+         |  Calls get-brief
+         v
+7:02 AM  Brief delivered to Mike's email
+         |  Assistant skips its own sent message
+         v
+9:30 AM  Mike reads brief, says "mark Chen quote as in_progress"
+         |  update-item called, status updated
+         v
+2:00 PM  Mike finishes a job, says "log a job, painted 3 rooms
+         |  at 123 Main St for Henderson, $4,500, done"
+         v
+2:01 PM  log-item called, item stored
+         |  If Google Sheet connected, row synced
+         v
+Next AM  Assistant scans again, only new emails
+         |  Chen quote still in_progress, shows in aging
+         |  Henderson job marked done, off the watchlist
+```
+
 ## License
 
 MIT
