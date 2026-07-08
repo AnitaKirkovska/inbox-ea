@@ -18,11 +18,11 @@ Your assistant already reads email. What it can't do out of the box is remember 
 
 ## What you get
 
-- **A morning brief**, delivered every day with urgency-ranked actions. Overdue items first, then aging quotes and follow-ups, then what's new today.
-- **A persistent watchlist** that grows with your inbox. Items stay until you mark them done or ignored.
-- **Daily markdown history** written to your workspace. Every brief is archived as a readable file you can open anytime.
-- **Spreadsheet sync** (optional). Items mirror to Google Sheets or Microsoft Excel so you can see everything in a format you already know.
-- **In-chat logging**. Say "log a new lead from Sarah" and it's tracked. No app to open, no form to fill.
+- **A morning brief.** You wake up to a short list of what needs your attention. "Follow up with Henderson, quote is 9 days cold." That's it. No numbers to interpret, just what to do.
+- **A watchlist that remembers.** "Log a lead from Sarah, she wants a painting quote." It's tracked. Stays on your list until you say "mark Sarah as done."
+- **History you can look back on.** Every morning's brief is saved as a file in your workspace. Open any day to see what was on your plate.
+- **Your spreadsheet, if you want it.** Everything syncs to Google Sheets or Excel. Same stuff, in a format you already know. Add your own columns, share it with your accountant.
+- **Just talk.** No app to open, no form to fill. Say what happened, say what's done. That's the whole interface.
 
 ## Scheduled jobs
 
