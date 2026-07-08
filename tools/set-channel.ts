@@ -28,20 +28,20 @@ const tool: ToolDefinition = {
     // If no channel provided, just return current preference
     if (!input.channel) {
       return {
-        content: JSON.stringify({
+        content: {
           preferredChannel: store.preferredChannel,
           message: store.preferredChannel
             ? `Briefs are currently sent via ${store.preferredChannel}.`
             : "No channel set yet. Ask the owner where to send the morning brief.",
-        }),
+        },
       };
     }
 
     if (!VALID_CHANNELS.includes(input.channel as PreferredChannel)) {
       return {
-        content: JSON.stringify({
+        content: {
           error: `Invalid channel. Must be one of: ${VALID_CHANNELS.join(", ")}`,
-        }),
+        },
         isError: true,
       };
     }
@@ -50,11 +50,11 @@ const tool: ToolDefinition = {
     saveStore(store);
 
     return {
-      content: JSON.stringify({
+      content: {
         preferredChannel: store.preferredChannel,
         updated: true,
         message: `Morning brief will now be delivered via ${store.preferredChannel}.`,
-      }),
+      },
     };
   },
 };

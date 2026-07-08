@@ -36,8 +36,8 @@ export interface Store {
 }
 
 const STORAGE_DIR = process.env.VELLUM_WORKSPACE_DIR
-  ? join(process.env.VELLUM_WORKSPACE_DIR, "plugins", "inbox-ea", "data")
-  : join(process.cwd(), "plugins-data", "inbox-ea");
+  ? join(process.env.VELLUM_WORKSPACE_DIR, "plugins", "smb-inbox-brief", "data")
+  : join(process.cwd(), "plugins-data", "smb-inbox-brief");
 
 const STORE_FILE = join(STORAGE_DIR, "items.json");
 

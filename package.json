@@ -1,7 +1,7 @@
 {
-  "name": "@anitakirkovska/inbox-ea",
-  "version": "0.1.0",
-  "description": "Every morning, scan your email for business stuff that needs your attention and send you a short brief. Never miss a lead, a quote that's going cold, or a supplier price change again.",
+  "name": "@anitakirkovska/smb-inbox-brief",
+  "version": "0.2.0",
+  "description": "Find urgent replies, overdue invoices, quotes, and customer follow-ups before they slip. Every morning, scan your email for business stuff that needs your attention and get a short brief.",
   "license": "MIT",
   "peerDependencies": {
     "@vellumai/plugin-api": "^0.8.0"

@@ -50,21 +50,21 @@ const tool: ToolDefinition = {
   }) => {
     if (!input.id && !input.search) {
       return {
-        content: "Either id or search is required to find the item.",
+        content: { error: "Either id or search is required to find the item." },
         isError: true,
       };
     }
 
     if (input.status && !VALID_STATUSES.includes(input.status as ItemStatus)) {
       return {
-        content: `Invalid status. Must be one of: ${VALID_STATUSES.join(", ")}`,
+        content: { error: `Invalid status. Must be one of: ${VALID_STATUSES.join(", ")}` },
         isError: true,
       };
     }
 
     if (input.priority && !VALID_PRIORITIES.includes(input.priority as Priority)) {
       return {
-        content: `Invalid priority. Must be one of: ${VALID_PRIORITIES.join(", ")}`,
+        content: { error: `Invalid priority. Must be one of: ${VALID_PRIORITIES.join(", ")}` },
         isError: true,
       };
     }
@@ -83,7 +83,7 @@ const tool: ToolDefinition = {
 
     if (!item) {
       return {
-        content: "Item not found.",
+        content: { error: "Item not found." },
         isError: true,
       };
     }
@@ -108,12 +108,12 @@ const tool: ToolDefinition = {
     saveStore(store);
 
     return {
-      content: JSON.stringify({
+      content: {
         id: item.id,
         updated: true,
         changes,
         item,
-      }),
+      },
     };
   },
 };

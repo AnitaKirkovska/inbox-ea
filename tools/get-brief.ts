@@ -168,8 +168,8 @@ const tool: ToolDefinition = {
       const { writeFileSync, mkdirSync, existsSync } = await import("fs");
       const { join } = await import("path");
       const briefDir = process.env.VELLUM_WORKSPACE_DIR
-        ? join(process.env.VELLUM_WORKSPACE_DIR, "plugins", "inbox-ea", "briefs")
-        : join(process.cwd(), "plugins-data", "inbox-ea", "briefs");
+        ? join(process.env.VELLUM_WORKSPACE_DIR, "plugins", "smb-inbox-brief", "briefs")
+        : join(process.cwd(), "plugins-data", "smb-inbox-brief", "briefs");
       if (!existsSync(briefDir)) {
         mkdirSync(briefDir, { recursive: true });
       }
@@ -186,11 +186,11 @@ const tool: ToolDefinition = {
     }
 
     return {
-      content: JSON.stringify({
+      content: {
         brief: briefText,
         summary: brief.summary,
         lastScanAt: store.lastScanAt,
-      }),
+      },
     };
   },
 };

@@ -87,18 +87,18 @@ const tool: ToolDefinition = {
     // Validate required fields
     if (!input.type || !VALID_TYPES.includes(input.type as ItemType)) {
       return {
-        content: `Invalid or missing type. Must be one of: ${VALID_TYPES.join(", ")}`,
+        content: { error: `Invalid or missing type. Must be one of: ${VALID_TYPES.join(", ")}` },
         isError: true,
       };
     }
     if (!input.subject || input.subject.trim().length === 0) {
-      return { content: "subject is required and cannot be empty", isError: true };
+      return { content: { error: "subject is required and cannot be empty" }, isError: true };
     }
     if (!input.counterparty || input.counterparty.trim().length === 0) {
-      return { content: "counterparty is required and cannot be empty", isError: true };
+      return { content: { error: "counterparty is required and cannot be empty" }, isError: true };
     }
     if (!input.date) {
-      return { content: "date is required", isError: true };
+      return { content: { error: "date is required" }, isError: true };
     }
 
     const item: Item = {
@@ -120,12 +120,12 @@ const tool: ToolDefinition = {
     saveStore(store);
 
     return {
-      content: JSON.stringify({
+      content: {
         id: item.id,
         logged: true,
         item,
         totalItems: store.items.length,
-      }),
+      },
     };
   },
 };
