@@ -1,0 +1,10 @@
+{
+  "name": "@anitakirkovska/inbox-ea",
+  "version": "0.1.0",
+  "description": "Inbox triage plugin for small business owners. Stores items extracted from email and delivers urgency-ranked briefs.",
+  "license": "MIT",
+  "peerDependencies": {
+    "@vellumai/plugin-api": "^0.8.0"
+  },
+  "vellum": {}
+}
