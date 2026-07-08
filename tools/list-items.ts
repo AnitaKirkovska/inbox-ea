@@ -71,11 +71,11 @@ const tool: ToolDefinition = {
     items.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return {
-      content: {
+      content: JSON.stringify({
         count: items.length,
         items,
         lastScanAt: store.lastScanAt,
-      },
+      }),
     };
   },
 };

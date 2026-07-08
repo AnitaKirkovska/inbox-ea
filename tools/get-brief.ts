@@ -186,11 +186,11 @@ const tool: ToolDefinition = {
     }
 
     return {
-      content: {
+      content: JSON.stringify({
         brief: briefText,
         summary: brief.summary,
         lastScanAt: store.lastScanAt,
-      },
+      }),
     };
   },
 };
