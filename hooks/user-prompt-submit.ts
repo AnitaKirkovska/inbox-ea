@@ -31,11 +31,11 @@ const onUserPromptSubmit: PluginHookFn = async (ctx) => {
 
   if (!needsOnboarding) return;
 
-  // Inject a system instruction at the front of the working message list
+  // Inject an onboarding instruction at the front of the working message list
   // so the assistant runs onboarding before responding to anything else.
   ctx.latestMessages.unshift({
-    role: "system",
-    content: ONBOARDING_INSTRUCTION,
+    role: "user",
+    content: [{ type: "text", text: ONBOARDING_INSTRUCTION }],
   });
 };
 
